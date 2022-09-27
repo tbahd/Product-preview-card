@@ -14,13 +14,13 @@
 <body>
     <main>
         <section>
-            <div>
-                <div class="photo">
-                    <div class="desktop-photo"><img src="/images/image-product-desktop.jpg" alt="perfume picture"  class="desktop"></div>
-                
-                    <div class="mobile-photo"><img src="images/image-product-mobile.jpg" alt=""    class="mobile"></div>
-                </div>
-            </div>
+
+            <picture>
+                <source media="(max-width:800px)" srcset="/images/image-product-mobile.jpg" class="mobile" width="100%">
+
+                <img src="/images/image-product-desktop.jpg" alt="perfume picture" class="desktop mobile">
+            </picture>
+
             <div class="content">
                 <p class="head">PERFUME</p>
                 <h1> Gabrielle Essence Eau De Parfume</h1>
@@ -32,6 +32,7 @@
                 <a href="#" class="btn"><img src="/images/icon-cart.svg" alt="cart icon">Add to Cart</a>
             </div>
         </section>
+        
         <div class="attribution">
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
             Coded by <a href="https://www.frontendmentor.io/profile/tbahd" target="_blank">Tbahd</a>.
