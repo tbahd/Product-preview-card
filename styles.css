@@ -74,10 +74,11 @@ section{
     margin-bottom: .5rem;
 }
 
-.price h2{
+.price .main-price{
     font-size: 2rem;
     font-family: 'Fraunces', serif;
     color: var(--Darkcyan);
+    text-decoration: none;
 }
 
 .price p{
